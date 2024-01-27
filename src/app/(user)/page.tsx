@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { MainCarousel } from "./components/MainCarousel";
 import ProductCard from "./components/ProductCard";
 
@@ -11,7 +12,7 @@ export default function Home() {
         </div>
         <div className="p-4 mt-4 flex flex-row items-center gap-x-3">
           <h3 className=" text-xl font-bold">Featured Products</h3>
-          <a href="/products">see all products</a>
+          <Link href="/products">see all products</Link>
         </div>
         <div className="grid grid-cols-3 gap-x-2 gap-y-4">
           <ProductCard source={"gambar/dunklow.png"} name={"SB Dunk Low Panda"} price={"Rp. 2.299.000"}/>
@@ -23,7 +24,7 @@ export default function Home() {
         </div>
         <div className="p-4 mt-4 flex flex-row items-center gap-x-3">
           <h3 className=" text-xl font-bold">Other Products</h3>
-          <a href="/products">see all products</a>
+          <Link href="/products">see all products</Link>
         </div>
         <div className="grid grid-cols-3 gap-x-2 gap-y-4 mb-8">
           <ProductCard source={"gambar/dunklow.png"} name={"SB Dunk Low Panda"} price={"Rp. 2.299.000"}/>

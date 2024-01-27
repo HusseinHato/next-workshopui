@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import * as Menubar from "@radix-ui/react-menubar";
+import Link from "next/link";
 
 export default function Navbar() {
   return (
@@ -10,12 +11,12 @@ export default function Navbar() {
           <div className="flex items-center justify-between py-4">
             {/* Logo */}
             <div className="flex flex-row items-center gap-x-7">
-              <a
+              <Link
                 href="/"
                 className="text-2xl font-bold text-indigo-600 hidden md:block"
               >
                 <img src="Sneaky.png" alt="sneaky" className="w-[130px]" />
-              </a>
+              </Link>
               <Menubar.Menu>
                 <Menubar.Trigger className=" hover:text-indigo-600">
                   Categories
@@ -27,100 +28,100 @@ export default function Navbar() {
                   >
                     <div className="grid grid-cols-2 gap-x-10 p-[22px]">
                       <div className="flex flex-col gap-y-1 w-[250px]">
-                        <a
+                        <Link
                           href="/katalog"
                           className="p-4 hover:bg-gray-200 rounded-md"
                         >
                           Basketball
-                        </a>
-                        <a
+                        </Link>
+                        <Link
                           href="/katalog"
                           className="p-4 hover:bg-gray-200 rounded-md"
                         >
                           Football
-                        </a>
-                        <a
+                        </Link>
+                        <Link
                           href="/katalog"
                           className="p-4 hover:bg-gray-200 rounded-md"
                         >
                           Running
-                        </a>
-                        <a
+                        </Link>
+                        <Link
                           href="/katalog"
                           className="p-4 hover:bg-gray-200 rounded-md"
                         >
                           Trail
-                        </a>
-                        <a
+                        </Link>
+                        <Link
                           href="/katalog"
                           className="p-4 hover:bg-gray-200 rounded-md"
                         >
                           Futsal
-                        </a>
-                        <a
+                        </Link>
+                        <Link
                           href="/katalog"
                           className="p-4 hover:bg-gray-200 rounded-md"
                         >
                           Tennis
-                        </a>
-                        <a
+                        </Link>
+                        <Link
                           href="/katalog"
                           className="p-4 hover:bg-gray-200 rounded-md"
                         >
                           Bike
-                        </a>
+                        </Link>
                       </div>
                       <div className="flex flex-col gap-y-1 w-[250px]">
-                        <a
+                        <Link
                           href="/katalog"
                           className="p-4 hover:bg-gray-200 rounded-md"
                         >
                           Sneakers
-                        </a>
-                        <a
+                        </Link>
+                        <Link
                           href="/katalog"
                           className="p-4 hover:bg-gray-200 rounded-md"
                         >
                           Training
-                        </a>
-                        <a
+                        </Link>
+                        <Link
                           href="/katalog"
                           className="p-4 hover:bg-gray-200 rounded-md"
                         >
                           Volley
-                        </a>
-                        <a
+                        </Link>
+                        <Link
                           href="/katalog"
                           className="p-4 hover:bg-gray-200 rounded-md"
                         >
                           Badminton
-                        </a>
-                        <a
+                        </Link>
+                        <Link
                           href="/katalog"
                           className="p-4 hover:bg-gray-200 rounded-md"
                         >
                           Golf
-                        </a>
-                        <a
+                        </Link>
+                        <Link
                           href="/katalog"
                           className="p-4 hover:bg-gray-200 rounded-md"
                         >
                           Baseball
-                        </a>
-                        <a
+                        </Link>
+                        <Link
                           href="/katalog"
                           className="p-4 hover:bg-gray-200 rounded-md"
                         >
                           Skate
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </Menubar.Content>
                 </Menubar.Portal>
               </Menubar.Menu>
-              <a href="/blog" className=" hover:text-indigo-600">
+              <Link href="/blog" className=" hover:text-indigo-600">
                 Blog
-              </a>
+              </Link>
               <div className="flex items-center space-x-4">
                 <label className="relative text-gray-400 focus-within:text-gray-600">
                   <svg
@@ -149,7 +150,7 @@ export default function Navbar() {
             {/* Navigation Links - Mobile */}
             <div className="flex items-center gap-x-2">
               {/* Cart */}
-              <a href="/cart">
+              <Link href="/cart">
                 <button className="text-gray-600 hover:text-indigo-600 focus:outline-none hover:bg-gray-200 p-4 rounded-md">
                   <svg
                     className="fill-gray-500"
@@ -161,8 +162,8 @@ export default function Navbar() {
                     <path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z" />
                   </svg>
                 </button>
-              </a>
-              <a href="/favourites">
+              </Link>
+              <Link href="/favourites">
                 <button className="text-gray-600 hover:text-indigo-600 focus:outline-none hover:bg-gray-200 p-4 rounded-md">
                   <svg
                     className="fill-gray-500"
@@ -174,8 +175,8 @@ export default function Navbar() {
                     <path d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z" />
                   </svg>
                 </button>
-              </a>
-              <a href="/history">
+              </Link>
+              <Link href="/history">
                 <button className="text-gray-600 hover:text-indigo-600 focus:outline-none hover:bg-gray-200 p-4 rounded-md hidden md:block">
                   <svg
                     className="fill-gray-500"
@@ -187,7 +188,7 @@ export default function Navbar() {
                     <path d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z" />
                   </svg>
                 </button>
-              </a>
+              </Link>
             </div>
           </div>
         </div>

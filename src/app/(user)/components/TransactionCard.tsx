@@ -8,6 +8,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import Link from "next/link";
 
 export default function TransactionCard({
   name,
@@ -29,9 +30,9 @@ export default function TransactionCard({
             </div>
             <div className="flex flex-row justify-end gap-x-3">
               <p>Total Price: <span className="font-bold">{price}</span></p>
-              <a href="/detailtransaction ">
+              <Link href="/detailtransaction ">
               <button className="w-[100px] border border-gray-300 rounded-md hover:bg-gray-400 text-white bg-black">More</button>
-              </a>
+              </Link>
             </div>
           </div>
         </div>

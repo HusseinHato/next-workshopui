@@ -8,6 +8,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import Link from "next/link";
 
 export default function CartCard({
   source,
@@ -45,12 +46,12 @@ export default function CartCard({
             />
           </div>
           <div className="ms-3 flex flex-col flex-grow justify-between">
-            <a href="/detilproduk" className="w-full mt-12">
+            <Link href="/detilproduk" className="w-full mt-12">
               <div>
                 <p className="font-bold text-xl">{name}</p>
                 <p className="font-medium">{price}</p>
               </div>
-            </a>
+            </Link>
             <div className="flex flex-row justify-end gap-x-3">
               <button className="text-gray-600 hover:text-indigo-600 focus:outline-none hover:bg-gray-200 p-4 rounded-md">
                 <svg

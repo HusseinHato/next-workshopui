@@ -7,11 +7,12 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import Link from "next/link";
 
 export default function BlogCard() {
   return (
     <Card className="w-[360px] border-0">
-      <a href="/exampleblog">
+      <Link href="/exampleblog">
         <CardHeader className="p-0">
             <img
               src="gambar/gambar-blog.jpg"
@@ -31,7 +32,7 @@ export default function BlogCard() {
             <p className="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores hic numquam, iste aperiam ex accusantium quidem quisquam possimus ... </p>
           </div>
         </CardContent>
-      </a>
+      </Link>
     </Card>
   );
 }

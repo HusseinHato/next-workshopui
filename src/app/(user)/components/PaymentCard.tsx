@@ -8,6 +8,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import Link from "next/link";
 
 export default function PaymentCard({
   source,
@@ -31,12 +32,12 @@ export default function PaymentCard({
             />
           </div>
           <div className="ms-3 flex flex-col flex-grow justify-between">
-            <a href="/detilproduk" className="w-full mt-12">
+            <Link href="/detilproduk" className="w-full mt-12">
               <div>
                 <p className="font-bold text-xl">{name}</p>
                 <p className="font-medium">{price}</p>
               </div>
-            </a>
+            </Link>
             <div className="flex flex-row justify-end gap-x-3">
               <p>Quantity : 1</p>
             </div>

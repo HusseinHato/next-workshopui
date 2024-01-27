@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 export default function SidebarAdmin() {
@@ -36,49 +37,49 @@ export default function SidebarAdmin() {
             <img className="w-3/4" src="assets/images/logo.png" alt="" />
             <ul className="space-y-3 mt-10">
               <li>
-                <a
+                <Link
                   href="/dashboard"
                   className="flex items-center p-3 px-5 text-[#595959] rounded-lg hover:bg-gray-100 group duration-300"
                 >
                   <i className="fa-solid fa-grip"></i>
                   <span className="ms-3">Dashboard</span>
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="/transaction"
                   className="flex items-center p-3 px-5 text-[#595959] rounded-lg hover:bg-gray-100 group duration-300"
                 >
                   <i className="fa-solid fa-money-bills"></i>
                   <span className="ms-3">Transaction</span>
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="/product"
                   className="flex items-center p-3 px-5 text-[#595959] rounded-lg hover:bg-gray-100 group duration-300"
                 >
                   <i className="fa-solid fa-box-open"></i>
                   <span className="ms-3">Product</span>
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="/article"
                   className="flex items-center p-3 px-5 text-[#595959] hover:bg-gray-100 rounded-lg group duration-300"
                 >
                   <i className="fa-solid fa-newspaper"></i>
                   <span className="ms-3">Article</span>
-                </a>
+                </Link>
               </li>
               <li>
-                <a
+                <Link
                   href="/user"
                   className="flex items-center p-3 px-5 text-[#595959] rounded-lg hover:bg-gray-100 group duration-300"
                 >
                   <i className="fa-solid fa-users"></i>
                   <span className="ms-3">User</span>
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
