@@ -12,7 +12,7 @@ import {
 
 export default function page() {
   return (
-    <div className="grid grid-cols-2 container max-w-6xl mx-auto mb-6">
+    <div className="grid grid-cols-1 md:grid-cols-2 container max-w-6xl mx-auto mb-6">
       <div className="mt-3">
         <Carousel className="w-full">
           <CarouselContent>
@@ -20,7 +20,7 @@ export default function page() {
                 <div className="p-1">
                   <Card>
                     <CardContent className="w-full p-0">
-                      <img src="kdtrey/kdtrey1.jpeg" alt="kdtrey1" className="w-[568px] h-[568px] rounded-md object-cover" />
+                      <img src="kdtrey/kdtrey1.jpeg" alt="kdtrey1" className="md:w-[568px] md:h-[568px] rounded-md object-cover" />
                     </CardContent>
                   </Card>
                 </div>
@@ -29,7 +29,7 @@ export default function page() {
                 <div className="p-1">
                   <Card>
                     <CardContent className="w-full p-0">
-                      <img src="kdtrey/kdtrey2.png" alt="kdtrey2" className="w-[568px] h-[568px] rounded-md object-cover" />
+                      <img src="kdtrey/kdtrey2.png" alt="kdtrey2" className="md:w-[568px] md:h-[568px] rounded-md object-cover" />
                     </CardContent>
                   </Card>
                 </div>
@@ -38,7 +38,7 @@ export default function page() {
                 <div className="p-1">
                   <Card>
                     <CardContent className="w-full p-0">
-                      <img src="kdtrey/kdtrey3.png" alt="kdtrey3" className="w-[568px] h-[568px] rounded-md object-cover" />
+                      <img src="kdtrey/kdtrey3.png" alt="kdtrey3" className="md:w-[568px] md:h-[568px] rounded-md object-cover" />
                     </CardContent>
                   </Card>
                 </div>
@@ -47,7 +47,7 @@ export default function page() {
                 <div className="p-1">
                   <Card>
                     <CardContent className="w-full p-0">
-                      <img src="kdtrey/kdtrey4.png" alt="kdtrey4" className="w-[568px] h-[568px] rounded-md object-cover" />
+                      <img src="kdtrey/kdtrey4.png" alt="kdtrey4" className="md:w-[568px] md:h-[568px] rounded-md object-cover" />
                     </CardContent>
                   </Card>
                 </div>
@@ -56,7 +56,7 @@ export default function page() {
                 <div className="p-1">
                   <Card>
                     <CardContent className="w-full p-0">
-                      <img src="kdtrey/kdtrey5.jpeg" alt="kdtrey5" className="w-[568px] h-[568px] rounded-md object-cover" />
+                      <img src="kdtrey/kdtrey5.jpeg" alt="kdtrey5" className="md:w-[568px] md:h-[568px] rounded-md object-cover" />
                     </CardContent>
                   </Card>
                 </div>
@@ -65,7 +65,7 @@ export default function page() {
                 <div className="p-1">
                   <Card>
                     <CardContent className="w-full p-0">
-                      <img src="kdtrey/kdtrey6.png" alt="kdtrey6" className="w-[568px] h-[568px] rounded-md object-cover" />
+                      <img src="kdtrey/kdtrey6.png" alt="kdtrey6" className="md:w-[568px] md:h-[568px] rounded-md object-cover" />
                     </CardContent>
                   </Card>
                 </div>
@@ -118,7 +118,7 @@ export default function page() {
         <button className="border text-white bg-gray-800 p-4 mb-2 rounded-xl hover:bg-gray-400">
           Add to Bag
         </button>
-        <button className="border border-gray-400 hover:bg-gray-200 p-4 rounded-xl flex items-center justify-center gap-x-2">
+        <button className="border border-gray-400 hover:bg-gray-200 p-4 rounded-xl flex items-center justify-center gap-x-2 md:mb-0 mb-16">
           <span>Favourite</span>
           <span>
             <svg

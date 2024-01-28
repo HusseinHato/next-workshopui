@@ -28,7 +28,7 @@ export default function PaymentCard({
             <img
               src={source}
               alt="testing"
-              className="rounded-md w-[200px] h-[258px]"
+              className="rounded-md md:w-[200px] md:h-[258px] w-[120px]"
             />
           </div>
           <div className="ms-3 flex flex-col flex-grow justify-between">

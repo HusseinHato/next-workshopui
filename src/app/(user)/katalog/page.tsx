@@ -8,7 +8,7 @@ export default function page() {
   const [sortby, setSortby] = React.useState("Featured");
 
   return (
-    <div className='container grid mx-auto w-full max-w-4xl'>
+    <div className='container grid mx-auto w-full max-w-4xl p-2 md:p-0'>
         <div className='my-4 rounded-md'>
             <img src="gambar/crop.jpeg" alt="katalog" className='brightness-50 rounded-md object-cover h-[300px] w-full'/>
             <p className=' text-white top-[40%] text-4xl font-bold left-1/2 -translate-x-1/2 -translate-y-1/2 absolute'>Basketball</p>
@@ -88,7 +88,7 @@ export default function page() {
           </Menubar.Menu>
         </Menubar.Root>
       </div>
-        <div className="grid grid-cols-3 gap-x-2 gap-y-4 mb-8">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-x-2 gap-y-4 mb-8">
           <ProductCard source={"gambar/kdtrey.png"} name={"KD Trey 5"} price={"Rp. 1.699.000"}/>
           <ProductCard source={"gambar/kdtrey.png"} name={"KD Trey 5"} price={"Rp. 1.699.000"}/>
           <ProductCard source={"gambar/kdtrey.png"} name={"KD Trey 5"} price={"Rp. 1.699.000"}/>
@@ -96,7 +96,7 @@ export default function page() {
           <ProductCard source={"gambar/kdtrey.png"} name={"KD Trey 5"} price={"Rp. 1.699.000"}/>
           <ProductCard source={"gambar/kdtrey.png"} name={"KD Trey 5"} price={"Rp. 1.699.000"}/>
         </div>
-        <div className="flex justify-center items-center mb-8">
+        <div className="flex justify-center items-center mb-24 md:mb-8">
           <button className="border border-gray-300 py-4 px-8 hover:bg-gray-200 rounded-md">More Products</button>
         </div>
     </div>

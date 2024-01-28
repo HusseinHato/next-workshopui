@@ -18,7 +18,7 @@ export default function Navbar() {
                 <img src="Sneaky.png" alt="sneaky" className="w-[130px]" />
               </Link>
               <Menubar.Menu>
-                <Menubar.Trigger className=" hover:text-indigo-600">
+                <Menubar.Trigger className=" hover:text-indigo-600 hidden md:block">
                   Categories
                 </Menubar.Trigger>
                 <Menubar.Portal>
@@ -119,7 +119,7 @@ export default function Navbar() {
                   </Menubar.Content>
                 </Menubar.Portal>
               </Menubar.Menu>
-              <Link href="/blog" className=" hover:text-indigo-600">
+              <Link href="/blog" className=" hover:text-indigo-600 hidden md:block">
                 Blog
               </Link>
               <div className="flex items-center space-x-4">
@@ -163,7 +163,7 @@ export default function Navbar() {
                   </svg>
                 </button>
               </Link>
-              <Link href="/favourites">
+              <Link href="/favourites" className="hidden md:block">
                 <button className="text-gray-600 hover:text-indigo-600 focus:outline-none hover:bg-gray-200 p-4 rounded-md">
                   <svg
                     className="fill-gray-500"

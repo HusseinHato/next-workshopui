@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function page() {
   return (
-    <div className="container grid mx-auto w-full max-w-4xl">
+    <div className="container grid mx-auto w-full max-w-4xl md:p-0 p-2">
       <div className="grid gap-y-4 mb-6 mt-6 text-center">
         <p className=" font-semibold text-lg">About us</p>
         <p className="font-extrabold text-3xl">
@@ -36,7 +36,7 @@ export default function page() {
         </p>
       </div>
       <div className="flex justify-center items-center mb-8">
-        <button className="border border-gray-300 py-4 px-8 hover:bg-gray-200 rounded-md">
+        <button className="border border-gray-300 py-4 px-8 hover:bg-gray-200 rounded-md md:mb-0 mb-24">
           Back
         </button>
       </div>

@@ -14,7 +14,7 @@ export default function ProductCard({ source, name, price }: { source: string; n
     <Card className="w-full md:w-[280px]">
       <Link href="/detilproduk">
         <CardHeader>
-          <img src={source} alt="dunklow" className="rounded-sm w-full md:w-[230px] h-[288px]" />
+          <img src={source} alt="dunklow" className="rounded-sm w-full md:w-[230px] md:h-[288px]" />
         </CardHeader>
         <CardContent>
           <div className="text-center">

@@ -15,11 +15,11 @@ import {
 
 export default function page() {
   return (
-    <div className="container max-w-6xl mx-auto">
+    <div className="container max-w-6xl mx-auto md:p-0 p-2">
       <div className="flex justify-center mb-6 mt-6">
         <p className="text-3xl font-bold">Payment</p>
       </div>
-      <div className="flex flex-row gap-x-4 mb-4 rounded-lg">
+      <div className="flex flex-col md:flex-row gap-x-4 mb-4 rounded-lg">
         <div className="flex flex-col gap-y-3 flex-grow">
           <PaymentCard
             source="gambar/kdtrey.png"
@@ -32,8 +32,8 @@ export default function page() {
             price={"Rp. 2.299.000"}
           />
         </div>
-        <div className="flex flex-col rounded-lg h-fit w-[450px]">
-          <div className="p-4 border border-gray-300 rounded-t-lg flex flex-col gap-y-2">
+        <div className="flex flex-col rounded-lg h-fit md:w-[450px]">
+          <div className="p-4 border border-gray-300 rounded-t-lg flex flex-col gap-y-2 mt-2 md:mt-0">
             <p className="text-xl font-bold">Address</p>
             <p className="font-medium">
               Jl. Jembatan Kuningan Blok G No. 22, Surabaya, East Java,
@@ -53,7 +53,7 @@ export default function page() {
               </SelectContent>
             </Select>
           </div>
-          <div className="p-4 border border-gray-300 flex flex-col gap-y-2">
+          <div className="p-4 border border-gray-300 flex flex-col gap-y-2 ">
             <p className="text-xl font-bold">Payment Option</p>
             <p className="font-medium">
               Select all Available Payment Method below
@@ -73,7 +73,7 @@ export default function page() {
               </SelectContent>
             </Select>
           </div>
-          <div className="p-4 border border-gray-300 rounded-b-lg flex flex-col gap-y-2">
+          <div className="p-4 border border-gray-300 rounded-b-lg flex flex-col gap-y-2 md:mb-0 mb-16">
             <p className="text-xl font-bold">Products Price</p>
             <div className="flex flex-row justify-between text-lg">
               <p className="font-medium">Total Price</p>
@@ -97,7 +97,7 @@ export default function page() {
               <p className="font-extrabold">Rp. 3.599.000</p>
             </div>
             <hr className="mt-2 mb-2" />
-            <button className="border text-white bg-gray-800 p-4 mb-2 rounded-xl hover:bg-gray-400">
+            <button className="border text-white bg-gray-800 p-4 md:mb-2 rounded-xl hover:bg-gray-400">
               Pay
             </button>
           </div>

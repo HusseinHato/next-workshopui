@@ -5,7 +5,7 @@ import TransactionCard from "../components/TransactionCard";
 
 export default function page() {
   return (
-    <div className="container max-w-6xl mx-auto">
+    <div className="container max-w-6xl mx-auto md:p-0 p-2">
       <div className="text-center mb-6 mt-6">
         <p className="text-3xl font-bold">Transaction History</p>
       </div>

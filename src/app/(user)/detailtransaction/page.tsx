@@ -15,12 +15,12 @@ import {
 
 export default function page() {
   return (
-    <div className="container max-w-6xl mx-auto">
+    <div className="container max-w-6xl mx-auto md:p-0 p-2">
       <div className="text-center mb-6 mt-6">
         <p className="text-3xl font-bold">Transaction Detail</p>
         <p className="font-medium">No. #112317</p>
       </div>
-      <div className="flex flex-row gap-x-4 mb-4 rounded-lg">
+      <div className="flex flex-col md:flex-row gap-x-4 mb-4 rounded-lg md:gap-y-0 gap-y-2">
         <div className="flex flex-col gap-y-3 flex-grow">
           <PaymentCard
             source="gambar/kdtrey.png"
@@ -33,7 +33,7 @@ export default function page() {
             price={"Rp. 2.299.000"}
           />
         </div>
-        <div className="flex flex-col rounded-lg h-fit w-[450px]">
+        <div className="flex flex-col rounded-lg h-fit md:w-[450px] md:mb-0 mb-16">
           <div className="p-4 border border-gray-300 rounded-t-lg flex flex-col gap-y-2">
             <p className="text-xl font-bold">Address</p>
             <p className="font-medium">

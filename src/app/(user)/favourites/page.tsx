@@ -9,7 +9,7 @@ export default function page() {
   const [sortby, setSortby] = React.useState("Newest");
 
   return (
-    <div className="container grid mx-auto w-full max-w-4xl">
+    <div className="container grid mx-auto w-full max-w-4xl p-2">
       <div className="p-8 mb-4 mt-4 flex flex-row justify-center">
         <h3 className="text-3xl font-bold">Favourites</h3>
       </div>
@@ -88,7 +88,7 @@ export default function page() {
           </Menubar.Menu>
         </Menubar.Root>
       </div>
-      <div className="grid grid-cols-3 gap-x-2 gap-y-4 mb-8">
+      <div className="grid grid-cols-2 md:grid-cols-3 gap-x-2 gap-y-4 mb-8">
         <ProductCard
           source={"gambar/dunklow.png"}
           name={"SB Dunk Low Panda"}
@@ -150,7 +150,7 @@ export default function page() {
           price={"Rp. 2.299.000"}
         />
       </div>
-      <div className="flex justify-center items-center mb-10">
+      <div className="flex justify-center items-center mb-32 md:mb-10">
         <button className="border border-gray-300 py-4 px-8 hover:bg-gray-200 rounded-md">
           More Products
         </button>

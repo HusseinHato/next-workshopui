@@ -2,12 +2,12 @@ import React from "react";
 
 export default function page() {
   return (
-    <div className="container grid mx-auto w-full max-w-4xl">
+    <div className="container grid mx-auto w-full max-w-4xl p-2 md:p-0">
       <div className="my-4 rounded-md">
         <img
           src="gambar/gambar-blog.jpg"
           alt="katalog"
-          className="rounded-md object-cover h-[500px] w-full"
+          className="rounded-md object-cover h-auto md:h-[500px] w-full"
         />
         {/* <p className=' text-white top-[45%] text-4xl font-bold left-1/2 -translate-x-1/2 -translate-y-1/2 absolute'>Basketball</p> */}
       </div>
@@ -107,7 +107,7 @@ export default function page() {
           </svg>
         </a>
       </div>
-      <div className="flex justify-center items-center mb-8">
+      <div className="flex justify-center items-center mb-32 md:mb-8">
         <button className="border border-gray-300 py-4 px-8 hover:bg-gray-200 rounded-md">
           Back
         </button>
